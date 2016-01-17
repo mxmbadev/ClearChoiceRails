@@ -1,0 +1,12 @@
+<h1><%= @client.business%></h1>
+<h1><%= @client.city%></h1>
+<h1><%= @client.owner_or_manager%></h1>
+<h1><%= @client.number%></h1>
+<h1><%= @client.email%></h1>
+<h1><%= @client.how_often%></h1>
+
+<br>
+<br>
+
+<%= link_to "Edit", edit_client_path(@client) %>
+<%= link_to "Delete", client_path(@client), method: :delete, data: {confirm: "Estas seguro que quieres borrar este cliente?"} %>
