@@ -1,7 +1,7 @@
 class ClientsController < ApplicationController
   before_action :find_client, only: [:show, :edit, :update, :destroy]
   def index
-    
+    @clients = Client.all.order("created_at desc")
   end
 
   def new
@@ -41,7 +41,7 @@ class ClientsController < ApplicationController
   private
 
   def client_params
-    params.require(:client).permit(:business, :city, :owner_or_manager, :number, :email, :how_often)
+    params.require(:client).permit(:business, :owner_or_manager, :number, :email, :how_often, :client_category_id)
   end
 
   def find_client
