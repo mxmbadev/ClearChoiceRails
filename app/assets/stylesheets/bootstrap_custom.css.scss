@@ -3,3 +3,188 @@
 @import "font-awesome";
 @import 'animate';
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+
+$blue: #00adef;
+$dark: #4E4E4E;
+$orange: #ff9600;
+
+body{
+  font-family: 'Raleway', sans-serif;
+  color:$dark;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li{
+  color: $dark;
+}
+
+p{
+  padding: 5% 0 5% 0;
+}
+
+hr{
+  width: 15%;
+  border: 2px solid $blue;
+}
+
+hr.two{
+  width: 15%;
+  border: 2px solid $orange;
+}
+
+nav.affix{
+  width: 100%;
+  background-color: white;
+  min-height: 100px;
+  margin-top: 0;
+}
+
+nav.affix.navbar li > a{
+ padding: 3em 2rem;
+}
+
+.navbar{
+  margin-top: 50px;
+  margin-bottom: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  z-index: 1030;
+}
+
+.navbar-brand{
+  margin-top: -30px;
+  .logo{
+    max-width: 40%;
+    max-width: 40%;
+  }.logo2{
+    display: none;
+    max-width: 40%;
+    max-width: 40%;
+    margin-top: 25px;
+  }
+}
+
+
+
+.btn{
+  background-color: $blue;
+  color: white;
+}
+
+
+.center-block{
+  float: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.mgn-top{
+  margin-top:-100px;
+}
+
+.mgntop{
+  margin-top:100px;
+}
+
+.mgn-bottom{
+  margin-bottom:100px;
+}
+
+.backBG{
+  background-image: url('/assets/clrbg2.png');
+  padding: 160px 60px;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+//About Section
+.heading{
+  text-align: center;
+  color: $dark;
+}
+
+
+//Service Section
+
+
+.office{
+  background-image: url('/assets/office.png');
+  padding: 100px 100px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.white-txt{
+  color: white;
+}
+
+.dark-txt{
+  color: $dark;
+}
+
+
+.windows{
+  background-image: url('/assets/windows.png');
+  padding: 100px 100px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.house{
+  background-image: url('/assets/house.png');
+  padding: 100px 100px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gutters{
+  background-image: url('/assets/gutters.png');
+  padding: 100px 100px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//Forms
+
+.formBG{
+  background-image: url('/assets/clrbg2.png');
+  padding: 160px 60px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.form{
+  padding-top: 5%;
+}
+

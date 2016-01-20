@@ -3,3 +3,16 @@
 <p>Total Clients =
   <%= Client.count%>
 </p>
+
+<div class="row">
+  <div class="col-md-12 center-block">
+    <% @clients.each do |client| %>
+      <div class="col-md-12 border">
+        <h1 style="text-align:center;"><a href=""><%= link_to client.business, client %></a></h1>
+        <p class="dates" style="text-align:center;"><%= client.created_at.strftime('%A, %B %d') %></p>
+        <hr style="width: 10%;">
+      </div>
+    <%end%>
+    <!-- <hr style="height: 100px; width: 2px;"> -->
+  </div>
+</div>
