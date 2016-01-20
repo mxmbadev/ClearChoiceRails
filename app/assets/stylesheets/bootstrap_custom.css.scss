@@ -32,6 +32,17 @@ hr.two{
   border: 2px solid $orange;
 }
 
+nav.affix{
+  width: 100%;
+  background-color: white;
+  min-height: 100px;
+  margin-top: 0;
+}
+
+nav.affix.navbar li > a{
+ padding: 3em 2rem;
+}
+
 .navbar{
   margin-top: 50px;
   margin-bottom: 0;
@@ -40,6 +51,21 @@ hr.two{
   border-radius: 0;
   z-index: 1030;
 }
+
+.navbar-brand{
+  margin-top: -30px;
+  .logo{
+    max-width: 40%;
+    max-width: 40%;
+  }.logo2{
+    display: none;
+    max-width: 40%;
+    max-width: 40%;
+    margin-top: 25px;
+  }
+}
+
+
 
 .btn{
   background-color: $blue;
@@ -142,5 +168,23 @@ hr.two{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+//Forms
+
+.formBG{
+  background-image: url('/assets/clrbg2.png');
+  padding: 160px 60px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.form{
+  padding-top: 5%;
 }
 
