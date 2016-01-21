@@ -5,8 +5,7 @@ class CreateClients < ActiveRecord::Migration
       t.string :owner_or_manager
       t.string :number
       t.string :email
-      t.string :how_often
-      t.integer :client_category_id
+      t.belongs_to :city
 
       t.timestamps null: false
     end
