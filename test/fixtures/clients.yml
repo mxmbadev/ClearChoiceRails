@@ -2,16 +2,14 @@
 
 one:
   business: MyString
-  city: MyString
   owner_or_manager: MyString
   number: MyString
   email: MyString
-  how_often: MyString
+  city_id: 
 
 two:
   business: MyString
-  city: MyString
   owner_or_manager: MyString
   number: MyString
   email: MyString
-  how_often: MyString
+  city_id: 
