@@ -1,18 +1,21 @@
-<h1>Hi World</h1>
-
-<p>Total Clients =
-  <%= Client.count%>
-</p>
-
-<div class="row">
-  <div class="col-md-12 center-block">
-    <% @clients.each do |client| %>
-      <div class="col-md-12 border">
-        <h1 style="text-align:center;"><a href=""><%= link_to client.business, client %></a></h1>
-        <p class="dates" style="text-align:center;"><%= client.created_at.strftime('%A, %B %d') %></p>
-        <hr style="width: 10%;">
-      </div>
-    <%end%>
-    <!-- <hr style="height: 100px; width: 2px;"> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="center">All Clients</h1>
+      <p class="center">Total Clients =
+        <%= Client.count%>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <% @clients.each do |client| %>
+        <div class="col-md-4 border" >
+          <h1 class="center clients"><a href=""><%= link_to client.business, client %></a></h1>
+        </div>
+      <%end%>
+    </div>
   </div>
 </div>

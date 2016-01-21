@@ -1,12 +1,40 @@
-<h1><%= @client.business%></h1>
-<h1><%= @client.city.name%></h1>
-<h1><%= @client.owner_or_manager%></h1>
-<h1><%= @client.number%></h1>
-<h1><%= @client.email%></h1>
+<div class="container mgntop">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-sm-5 center-block">
+        <h1><strong><%= @client.business %></strong> Information</h1>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-<br>
-<br>
-
-<%= link_to "Edit", edit_client_path(@client) %>
-<%= link_to "Delete", client_path(@client), method: :delete, data: {confirm: "Estas seguro que quieres borrar este cliente?"} %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-sm-10 center-block">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <th>Business Name</th>
+              <th>City</th>
+              <th>Owner or Manager</th>
+              <th>Contact Number</th>
+              <th>Email</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><%= @client.business%></td>
+                <td><%= @client.city.name%></td>
+                <td><%= @client.owner_or_manager%></td>
+                <td><%= @client.number%></td>
+                <td><%= @client.email%></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <%= link_to "Edit", edit_client_path(@client), class: "btn" %>
+        <%= link_to "Delete", client_path(@client), method: :delete, data: {confirm: "Estas seguro que quieres borrar este cliente?"}, class: "btn btn-danger" %>
+      </div>
+    </div>
+  </div>
+</div>
