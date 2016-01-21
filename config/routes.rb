@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :clients
-  resources :categories
+  resources :cities
   get 'welcome/index'
   root 'welcome#index'
 end

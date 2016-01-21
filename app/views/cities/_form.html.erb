@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="col-sm-6 form center-block">
+        <%= form_for @city do |f| %>
+          <% if @city.errors.any?%>
+            <h2><%= pluralize(@city.errors.count, "error") %> prevented this city from saving:</h2>
+            <ul>
+              <% @city.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <%end%>
+            </ul>
+          <%end%>
+
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, {class: 'form-control'} %>
+          </div>
+
+          <button type="submit" class="btn sendbtn">Submit</button>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>

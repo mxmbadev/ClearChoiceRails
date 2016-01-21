@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="center">All Cities</h1>
+      <p class="center">Total Cities =
+        <%= City.count%>
+      </p>
+    </div>
+  </div>
+</div>
+
+<% @cities.each do |city| %>
+  <div class="col-md-4 border" >
+    <h1 class="center clients"><a href=""><%= link_to city.name, city %></a></h1>
+  </div>
+<%end%>
