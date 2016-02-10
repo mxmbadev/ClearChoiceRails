@@ -1,5 +1,6 @@
 class CitiesController < ApplicationController
   before_action :find_city, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
   def index
     @cities = City.all.order("created_at desc")
   end

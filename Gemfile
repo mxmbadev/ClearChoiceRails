@@ -42,7 +42,7 @@ gem 'bootstrap-will_paginate'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 # Authentication
-gem 'devise', '~> 3.5', '>= 3.5.3'
+gem 'devise'
 
 # Animate.css
 gem 'animate.css-rails', '~> 3.2'

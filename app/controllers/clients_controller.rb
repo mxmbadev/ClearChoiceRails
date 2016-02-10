@@ -1,5 +1,6 @@
 class ClientsController < ApplicationController
   before_action :find_client, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
   def index
     @clients = Client.all.order("created_at desc")
   end

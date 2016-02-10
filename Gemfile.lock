@@ -190,7 +190,7 @@ DEPENDENCIES
   bootstrap-will_paginate
   byebug
   coffee-rails (~> 4.1.0)
-  devise (~> 3.5, >= 3.5.3)
+  devise
   font-awesome-rails
   friendly_id (~> 5.1)
   jbuilder (~> 2.0)
