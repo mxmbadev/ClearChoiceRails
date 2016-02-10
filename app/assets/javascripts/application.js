@@ -17,23 +17,23 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-  $(window).scroll(function() {
+// $(document).ready(function(){
+//   $(window).scroll(function() {
 
-    if ($(this).scrollTop()>0)
-     {
-        $('.logo2').show();
-        $('.logo').hide();
-     }
-    else
-     {
-      $('.logo').fadeIn();
-      $('.logo2').hide();
-     }
- });
+//     if ($(this).scrollTop()>0)
+//      {
+//         $('.logo2').show();
+//         $('.logo').hide();
+//      }
+//     else
+//      {
+//       $('.logo').fadeIn();
+//       $('.logo2').hide();
+//      }
+//  });
 
 //smoth scroll for nav
-  $(document).ready(function(){
+$(document).ready(function(){
   $('.nav li a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname) {
@@ -49,5 +49,3 @@ $(document).ready(function(){
     }
   });
 });
-
-})

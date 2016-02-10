@@ -1,3 +1,49 @@
-// Place all the styles related to the contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+
+$blue: #00adef;
+$dark: #4E4E4E;
+$orange: #ff9600;
+
+.contactbg{
+  background: url('/assets/clrbg3.jpg') no-repeat;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.cH{
+  color: white;
+}
+
+.con-form{
+  padding: 40px 0 60px 0;
+}
+
+.col-form-head{
+  padding-top: 160px;
+}
+
+.form-control{
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0 3px 10px #fff;
+  background: none;
+  color: #fff;
+}
+
+.form-control:focus{
+  box-shadow: 0 3px 10px $blue;
+}
+
+.sendbtn{
+  background: $blue;
+  color: white;
+  border-radius: 0px;
+  border: none;
+}
+
+.sendbtn:hover{
+  color: white;
+}

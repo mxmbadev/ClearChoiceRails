@@ -32,16 +32,16 @@ hr.two{
   border: 2px solid $orange;
 }
 
-nav.affix{
-  width: 100%;
-  background-color: white;
-  min-height: 100px;
-  margin-top: 0;
-}
+// nav.affix{
+//   width: 100%;
+//   background-color: white;
+//   min-height: 100px;
+//   margin-top: 0;
+// }
 
-nav.affix.navbar li > a{
- padding: 3em 2rem;
-}
+// nav.affix.navbar li > a{
+//  padding: 3em 2rem;
+// }
 
 .navbar{
   margin-top: 50px;
@@ -191,3 +191,4 @@ nav.affix.navbar li > a{
 
 
 @import 'clients';
+@import 'contacts';
