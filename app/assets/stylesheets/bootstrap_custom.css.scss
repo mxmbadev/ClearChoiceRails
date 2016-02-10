@@ -54,22 +54,22 @@ hr.two{
 
 .navbar-brand{
   margin-top: -30px;
-  .logo{
+  .li > a {
+    color: #fff;
+  }img{
     max-width: 40%;
     max-width: 40%;
-  }.logo2{
-    display: none;
-    max-width: 40%;
-    max-width: 40%;
-    margin-top: 25px;
   }
 }
-
-
 
 .btn{
   background-color: $blue;
   color: white;
+  border-radius: 0px;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
 
 

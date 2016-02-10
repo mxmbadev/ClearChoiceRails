@@ -17,7 +17,6 @@ $orange: #ff9600;
   position: relative;
   color: $blue;
   text-decoration: none;
-  
 }
 
 .clients a:hover {
@@ -43,4 +42,8 @@ $orange: #ff9600;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+input.city-client{
+  border: solid 1px #000;
 }
