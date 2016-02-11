@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <%= render "welcome/login_modal" %>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,7 +57,7 @@
             </li>
           <% else %>
             <li>
-              <%= link_to "Login", "#login", "data-toggle" => "modal"%>
+              <%= link_to "Login", new_user_session_path %>
             </li>
           <% end %>
         </ul>
