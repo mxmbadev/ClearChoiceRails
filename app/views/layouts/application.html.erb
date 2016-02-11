@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+  <%= render "welcome/login_modal" %>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,28 +29,38 @@
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Contact", new_contact_path %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clients <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li>
-                <%= link_to "All Clients", clients_path %>
-              </li>
-              <li>
-                <%= link_to "New Client", new_client_path %>
-              <li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li>
-                <%= link_to "All Cities", cities_path %>
-              </li>
-              <li>
-                <%= link_to "New City", new_city_path %>
-              </li>
-            </ul>
-          </li>
+
+          <% if user_signed_in? %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clients <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <%= link_to "All Clients", clients_path %>
+                </li>
+                <li>
+                  <%= link_to "New Client", new_client_path %>
+                <li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <%= link_to "All Cities", cities_path %>
+                </li>
+                <li>
+                  <%= link_to "New City", new_city_path %>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "Login", "#login", "data-toggle" => "modal"%>
+            </li>
+          <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -62,6 +72,7 @@
     <p class="alert"><%= alert %></p>
   <% end %>
 
+
 <%= yield %>
 
 <footer class="footer">
@@ -71,5 +82,7 @@
     </div>
   </div>
 </footer>
+
+
 </body>
 </html>

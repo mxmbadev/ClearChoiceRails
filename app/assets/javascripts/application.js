@@ -48,4 +48,8 @@ $(document).ready(function(){
       }
     }
   });
+
+  $(function ()
+    { $("#login").modal({show:false });
+  });
 });
