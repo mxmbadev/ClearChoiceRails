@@ -12,6 +12,7 @@ $orange: #ff9600;
 body{
   font-family: 'Raleway', sans-serif;
   color:$dark;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li{
@@ -44,9 +45,10 @@ hr.two{
 // }
 
 .navbar{
-  margin-top: 50px;
-  margin-bottom: 0;
-  background: transparent;
+  
+  // margin-bottom: 0;
+  background: #222222;
+  opacity: .8;
   border: none;
   border-radius: 0;
   z-index: 1030;
@@ -64,7 +66,7 @@ hr.two{
   margin-top: -30px;
   img{
     max-width: 40%;
-    max-width: 40%;
+    // max-width: 40%;
   }
 }
 
@@ -198,3 +200,4 @@ hr.two{
 
 @import 'clients';
 @import 'contacts';
+@import 'nav-header';

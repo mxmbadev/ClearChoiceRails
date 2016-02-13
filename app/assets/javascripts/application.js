@@ -17,21 +17,6 @@
 //= require turbolinks
 //= require_tree .
 
-// $(document).ready(function(){
-//   $(window).scroll(function() {
-
-//     if ($(this).scrollTop()>0)
-//      {
-//         $('.logo2').show();
-//         $('.logo').hide();
-//      }
-//     else
-//      {
-//       $('.logo').fadeIn();
-//       $('.logo2').hide();
-//      }
-//  });
-
 //smoth scroll for nav
 $(document).ready(function(){
   $('a').click(function() {
@@ -47,9 +32,5 @@ $(document).ready(function(){
         return false;
       }
     }
-  });
-
-  $(function ()
-    { $("#login").modal({show:false });
   });
 });
