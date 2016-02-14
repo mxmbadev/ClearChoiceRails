@@ -1,10 +1,10 @@
-<div class="container-fluid">
-  <div class="row mgn-top">
-    <div class="col-md-12 contactbg">
-      <div class="col-md-6 col-form-head center-block">
+<header>
+  <div class="container">
+    <div class="intro-form">
+      <div class="col-md-6 center-block">
         <h1 class="cH center">Get in Touch with Us</h1>
         <h4 class="cH center">We'd love to hear from you.</h4>
-        <div class="con-form">
+        <div>
           <%= form_for @contact do |f| %>
             <div class="form-group">
               <%= f.label :name, class: "cH" %>
@@ -38,4 +38,4 @@
       </div>
     </div>
   </div>
-</div>
+</header>

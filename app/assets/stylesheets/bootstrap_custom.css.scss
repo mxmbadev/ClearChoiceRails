@@ -33,19 +33,8 @@ hr.two{
   border: 2px solid $orange;
 }
 
-// nav.affix{
-//   width: 100%;
-//   background-color: white;
-//   min-height: 100px;
-//   margin-top: 0;
-// }
-
-// nav.affix.navbar li > a{
-//  padding: 3em 2rem;
-// }
 
 .navbar{
-  
   // margin-bottom: 0;
   background: #222222;
   opacity: .8;
@@ -101,18 +90,6 @@ hr.two{
   margin-bottom:100px;
 }
 
-.backBG{
-  background-image: url('/assets/clrbg2.png');
-  padding: 160px 60px;
-  height: 1000px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
 
 
 //About Section
@@ -121,13 +98,17 @@ hr.two{
   color: $dark;
 }
 
+#about{
+  padding-top: 100px;
+}
+
 
 //Service Section
 
 
 .office{
   background-image: url('/assets/office.png');
-  padding: 100px 100px;
+  padding: 50px 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -147,7 +128,7 @@ hr.two{
 
 .windows{
   background-image: url('/assets/windows.png');
-  padding: 100px 100px;
+  padding: 50px 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -158,7 +139,7 @@ hr.two{
 
 .house{
   background-image: url('/assets/house.png');
-  padding: 100px 100px;
+  padding: 50px 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -169,7 +150,7 @@ hr.two{
 
 .gutters{
   background-image: url('/assets/gutters.png');
-  padding: 100px 100px;
+  padding: 50px 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -178,19 +159,6 @@ hr.two{
   background-repeat: no-repeat;
 }
 
-//Forms
-
-.formBG{
-  background-image: url('/assets/clrbg2.png');
-  padding: 160px 60px;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-
-}
 
 .form{
   padding-top: 5%;
