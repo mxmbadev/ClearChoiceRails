@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <div class="col-sm-6 form center-block">
+      <div class="col-sm-6 center-block">
         <%= form_for @city do |f| %>
           <% if @city.errors.any?%>
             <h2><%= pluralize(@city.errors.count, "error") %> prevented this city from saving:</h2>

@@ -161,9 +161,15 @@ hr.two{
 
 
 .form{
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
+.notice, .alert{
+  background: $orange;
+  text-align: center;
+  color: #fff;
+  padding: 1em 0;
+}
 
 
 @import 'clients';

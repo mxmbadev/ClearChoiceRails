@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <div class="col-sm-6 form center-block">
+      <div class="col-sm-6 center-block">
         <%= form_for @client do |f| %>
           <% if @client.errors.any?%>
             <h2><%= pluralize(@client.errors.count, "error") %> prevented this client from saving:</h2>
