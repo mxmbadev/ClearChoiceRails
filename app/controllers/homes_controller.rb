@@ -1,5 +1,6 @@
 class HomesController < ApplicationController
   before_action :find_home, only: [:show, :edit, :update, :destroy]
+
   def index
     @clients = Client.all.order("created_at desc")
   end
@@ -27,7 +28,7 @@ class HomesController < ApplicationController
 
   def update
     if @home.update home_params
-      redirect_to @home, notice: "Orale! Actualisaste un Cliente."
+      redirect_to @home, notice: "Orale! Actualisaste el Cliente: #{@home.name}."
     else
       render 'edit'
     end
@@ -41,7 +42,7 @@ class HomesController < ApplicationController
   private
 
   def home_params
-    params.require(:home).permit(:dateOfService, :name, :phone, :address, :price, :next_service, :notes)
+    params.require(:home).permit(:dateOfService, :name, :phone, :address, :price, :nextService, :notes)
   end
 
   def find_home

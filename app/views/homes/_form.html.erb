@@ -12,8 +12,6 @@
             </ul>
           <%end%>
 
-
-
           <div class="form-group">
             <%= f.label :name %>
             <%= f.text_field :name, {class: 'form-control city-client'} %>
@@ -24,8 +22,25 @@
             <%= f.text_field :address, {class: 'form-control city-client'} %>
           </div>
 
+          <div class="form-group">
+            <%= f.label :phone %>
+            <%= f.text_field :phone, {class: 'form-control city-client'} %>
+          </div>
 
+          <div class="form-group">
+            <%= f.label "Date of Service" %>
+            <%= f.text_field :dateOfService, {class: 'form-control city-client'} %>
+          </div>
 
+          <div class="form-group">
+            <%= f.label "Next Service Date" %>
+            <%= f.text_field :nextService, {class: 'form-control city-client'} %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :notes %>
+            <%= f.text_area :notes, :rows => "10", class: "form-control city-client" %>
+          </div>
 
           <button type="submit" class="btn sendbtn">Submit</button>
 
