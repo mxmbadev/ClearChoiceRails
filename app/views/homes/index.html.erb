@@ -1,1 +1,21 @@
-Hello World
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mgntop">
+      <h1 class="center">All Residential Clients</h1>
+      <p class="center">Total Residential Clients =
+        <%= Home.count%>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <% @home.each do |home| %>
+        <div class="col-md-4 border" >
+          <h1 class="center clients"><a href=""><%= link_to home.name, home %></a></h1>
+        </div>
+      <%end%>
+    </div>
+  </div>
+</div>

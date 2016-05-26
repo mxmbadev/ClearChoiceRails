@@ -2,7 +2,7 @@ class HomesController < ApplicationController
   before_action :find_home, only: [:show, :edit, :update, :destroy]
 
   def index
-    @clients = Client.all.order("created_at desc")
+    @home = Home.all.order("created_at desc")
   end
 
   def new
