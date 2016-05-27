@@ -2,6 +2,10 @@ $blue: #00adef;
 $dark: #4E4E4E;
 $orange: #ff9600;
 
+.navbar{
+  min-height: 20px;
+}
+
 .navbar-default .navbar-brand {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -30,7 +34,7 @@ $orange: #ff9600;
 .navbar-default .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 100;
   letter-spacing: 1px;
   color: white;
 }

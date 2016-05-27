@@ -9,8 +9,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-  <body id="page-top" class="index">
-
+<body id="page-top" class="index">
+  <% if notice %>
+  <div id="notice-wrapper">
+    <p class="notice"><%= notice %></p>
+  </div>
+<%elsif alert%>
+  <div id="notice-wrapper">
+    <p class="alert"><%= alert %></p>
+  </div>
+<%end%>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -70,13 +78,6 @@
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
-      <div class="col-sm-6 center-block">
-        <% if notice%>
-          <p class="notice"><%= notice %></p>
-        <%elsif alert %>
-          <p class="alert"><%= alert %></p>
-        <% end %>
-      </div>
     </nav>
 
 

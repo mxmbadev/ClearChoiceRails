@@ -17,6 +17,7 @@ body{
 
 h1, h2, h3, h4, h5, h6, p, ul, li{
   color: $dark;
+  font-family: 'Raleway', sans-serif;
 }
 
 p{
@@ -33,6 +34,23 @@ hr.two{
   border: 2px solid $orange;
 }
 
+#notice-wrapper{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1050;
+  background: $blue;
+  p{
+    padding: 2.5rem 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+}
+
 
 .navbar{
   // margin-bottom: 0;
@@ -45,6 +63,7 @@ hr.two{
 
 .navbar-default .navbar-nav > li > a {
   color: $dark;
+  font-weight: 100;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
