@@ -20,8 +20,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
-# Add Bootstrap Framework for Styling of the App
-gem 'bootstrap-sass'
+# Add Materialize Framework for Styling of the App
+gem 'materialize-sass'
 
 # FontAwesome.io
 gem "font-awesome-rails"
