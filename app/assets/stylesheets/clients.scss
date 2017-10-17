@@ -3,9 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-$blue: #00adef;
-$dark: #4E4E4E;
-$orange: #ff9600;
+@import "modules/all";
 
 .border{
   border-right: 1px solid $blue;

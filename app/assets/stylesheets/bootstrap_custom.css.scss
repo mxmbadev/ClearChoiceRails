@@ -1,197 +1,197 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
-@import 'animate';
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+// @import "font-awesome";
+// @import 'animate';
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
 
-$blue: #00adef;
-$dark: #4E4E4E;
-$orange: #ff9600;
+// $blue: #00adef;
+// $dark: #4E4E4E;
+// $orange: #ff9600;
 
-body{
-  font-family: 'Raleway', sans-serif;
-  color:$dark;
-  overflow-x: hidden;
-}
+// body{
+//   font-family: 'Raleway', sans-serif;
+//   color:$dark;
+//   overflow-x: hidden;
+// }
 
-h1, h2, h3, h4, h5, h6, p, ul, li{
-  color: $dark;
-  font-family: 'Raleway', sans-serif;
-}
+// h1, h2, h3, h4, h5, h6, p, ul, li{
+//   color: $dark;
+//   font-family: 'Raleway', sans-serif;
+// }
 
-p{
-  padding: 5% 0 5% 0;
-}
+// p{
+//   padding: 5% 0 5% 0;
+// }
 
-hr{
-  width: 15%;
-  border: 2px solid $blue;
-}
+// hr{
+//   width: 15%;
+//   border: 2px solid $blue;
+// }
 
-hr.two{
-  width: 15%;
-  border: 2px solid $orange;
-}
+// hr.two{
+//   width: 15%;
+//   border: 2px solid $orange;
+// }
 
-#notice-wrapper{
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 1050;
-  background: $blue;
-  p{
-    padding: 2.5rem 0;
-    text-align: center;
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-}
-
-
-.navbar{
-  // margin-bottom: 0;
-  background: #222222;
-  opacity: .8;
-  border: none;
-  border-radius: 0;
-  z-index: 1030;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: $dark;
-  font-weight: 100;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: $dark;
-}
-
-.navbar-brand{
-  margin-top: -30px;
-  img{
-    max-width: 40%;
-    // max-width: 40%;
-  }
-}
-
-.btn{
-  background-color: $blue;
-  color: white;
-  border-radius: 0px;
-}
-
-.btn:focus{
-  box-shadow: none;
-}
+// #notice-wrapper{
+//   position: absolute;
+//   top: 0px;
+//   width: 100%;
+//   z-index: 1050;
+//   background: $blue;
+//   p{
+//     padding: 2.5rem 0;
+//     text-align: center;
+//     margin: 0;
+//     font-size: 1.25rem;
+//     font-weight: bold;
+//     color: #fff;
+//     letter-spacing: 2px;
+//   }
+// }
 
 
-.center-block{
-  float: none;
-}
+// .navbar{
+//   // margin-bottom: 0;
+//   background: #222222;
+//   opacity: .8;
+//   border: none;
+//   border-radius: 0;
+//   z-index: 1030;
+// }
 
-.center{
-  text-align: center;
-}
+// .navbar-default .navbar-nav > li > a {
+//   color: $dark;
+//   font-weight: 100;
+// }
 
-.mgn-top{
-  margin-top:-100px;
-}
+// .navbar-default .navbar-nav > li > a:hover {
+//   color: $dark;
+// }
 
-.mgntop{
-  margin-top:100px;
-}
+// .navbar-brand{
+//   margin-top: -30px;
+//   img{
+//     max-width: 40%;
+//     // max-width: 40%;
+//   }
+// }
 
-.mgn-bottom{
-  margin-bottom:100px;
-}
+// .btn{
+//   background-color: $blue;
+//   color: white;
+//   border-radius: 0px;
+// }
 
-
-
-//About Section
-.heading{
-  text-align: center;
-  color: $dark;
-}
-
-#about{
-  padding-top: 100px;
-}
-
-
-//Service Section
-
-
-.office{
-  background-image: url('/assets/office.png');
-  padding: 50px 50px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.white-txt{
-  color: white;
-}
-
-.dark-txt{
-  color: $dark;
-}
+// .btn:focus{
+//   box-shadow: none;
+// }
 
 
-.windows{
-  background-image: url('/assets/windows.png');
-  padding: 50px 50px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .center-block{
+//   float: none;
+// }
 
-.house{
-  background-image: url('/assets/house.png');
-  padding: 50px 50px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .center{
+//   text-align: center;
+// }
 
-.gutters{
-  background-image: url('/assets/gutters.png');
-  padding: 50px 50px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .mgn-top{
+//   margin-top:-100px;
+// }
+
+// .mgntop{
+//   margin-top:100px;
+// }
+
+// .mgn-bottom{
+//   margin-bottom:100px;
+// }
 
 
-.form{
-  padding-top: 10%;
-}
 
-.notice, .alert{
-  background: $orange;
-  text-align: center;
-  color: #fff;
-  padding: 1em 0;
-  font-size: 18px;
-}
+// //About Section
+// .heading{
+//   text-align: center;
+//   color: $dark;
+// }
+
+// #about{
+//   padding-top: 100px;
+// }
 
 
-@import 'clients';
-@import 'contacts';
-@import 'nav-header';
+// //Service Section
+
+
+// .office{
+//   background-image: url('/assets/office.png');
+//   padding: 50px 50px;
+//   position: relative;
+//   overflow: hidden;
+//   width: 100%;
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// .white-txt{
+//   color: white;
+// }
+
+// .dark-txt{
+//   color: $dark;
+// }
+
+
+// .windows{
+//   background-image: url('/assets/windows.png');
+//   padding: 50px 50px;
+//   position: relative;
+//   overflow: hidden;
+//   width: 100%;
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// .house{
+//   background-image: url('/assets/house.png');
+//   padding: 50px 50px;
+//   position: relative;
+//   overflow: hidden;
+//   width: 100%;
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// .gutters{
+//   background-image: url('/assets/gutters.png');
+//   padding: 50px 50px;
+//   position: relative;
+//   overflow: hidden;
+//   width: 100%;
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+
+// .form{
+//   padding-top: 10%;
+// }
+
+// .notice, .alert{
+//   background: $orange;
+//   text-align: center;
+//   color: #fff;
+//   padding: 1em 0;
+//   font-size: 18px;
+// }
+
+
+// @import 'clients';
+// @import 'contacts';
+// @import 'nav-header';
