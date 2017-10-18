@@ -19,9 +19,24 @@
     <p class="alert"><%= alert %></p>
   </div>
 <%end%>
-    <nav class="navbar navbar-default navbar-fixed-top">
+
+<nav>
+  <div class="container">
+    <div class="nav-wrapper">
+      <%= link_to image_tag("CC_new_logo_Wblue.png", :alt => "Clear Choice"), root_path, :class => "brand-logo" %>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+<!--
+
+<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -31,8 +46,6 @@
             </button>
             <%= link_to image_tag("clearChoice_web.png", :alt => "Clear Choice"), root_path, :class => "navbar-brand" %>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
@@ -75,22 +88,21 @@
                 <% end %>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
+
       </div>
-      <!-- /.container-fluid -->
     </nav>
+-->
 
 
+<%= yield %>
 
-      <%= yield %>
-
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="col-md-3">
-          <p>© 2016 <a href="http://espinozabrand.com">Brandon Espinoza</a></p>
-        </div>
-      </div>
-    </footer>
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="col-md-3">
+      <p>© 2016 <a href="http://espinozabrand.com">Brandon Espinoza</a></p>
+    </div>
+  </div>
+</footer>
 
 
   </body>
