@@ -1,6 +1,8 @@
 @import "modules/all";
 
-nav{
+nav.cc_nav{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 75px;
   .nav-wrapper{
     a.brand-logo img{
       max-width: 250px;
