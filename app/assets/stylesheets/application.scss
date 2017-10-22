@@ -25,6 +25,14 @@
    color: #535353;
    font-family: Arial, Helvetica, sans-serif;
  }
+ p{
+   letter-spacing: 2px;
+ }
+
+ .center-column{
+  float: none !important;
+  margin: 0 auto !important;
+}
  
  #notice-wrapper{
    position: absolute;
@@ -50,6 +58,46 @@
    color: #fff;
    padding: 1em 0;
    font-size: 18px;
+ }
+
+ .sections{
+   padding-top: 6%;
+   padding-bottom: 6%;
+   .title-dark{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    .hr-line{
+      padding: 0px;
+      hr{
+        border: none;
+        height: 5px;
+        background: $azul;
+      }
+    }
+    h1{
+      color: $oscuro;
+      letter-spacing: 2px;
+      font-weight: bold
+    }
+  }
+
+  .title-white{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    .hr-line{
+      padding: 0px;
+      hr{
+        border: none;
+        height: 5px;
+        background: #fff;
+      }
+    }
+    h1{
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+  }
  }
 
  
