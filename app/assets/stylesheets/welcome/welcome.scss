@@ -1,0 +1,45 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "modules/all";
+
+header.home-bg{
+  background-image: url('/assets/home-bg.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-top: -65px;
+  height: 100vh;
+  // text-align: center;
+  color: white;
+  .bg-text {
+    padding-top: 35vh;
+    h1{
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    h5{
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .hr-line{
+      padding: 0px;
+      hr{
+        border: none;
+        height: 5px;
+        background: $azul;
+      }
+    }
+  }
+}
+
+@import "services"
+
+
