@@ -30,19 +30,23 @@
         font-weight: bold;
       }
     }
-  }
-  .ind_service{
-    padding-top: 10%;
-    .icon_div{
-      padding: 0px;
+
+    .ind_service{
+      padding-top: 10%;
+      .icon_div{
+        padding: 0px;
+      }
+      .service_description{
+        h5{
+          font-weight: bold;
+        }
+        p{
+          letter-spacing: 2px;
+        }
+      }
     }
-    .service_description{
-      h5{
-        font-weight: bold;
-      }
-      p{
-        letter-spacing: 2px;
-      }
+    #office_cleaning, #pressure_washing{
+      padding-top: 12%;
     }
   }
 }
