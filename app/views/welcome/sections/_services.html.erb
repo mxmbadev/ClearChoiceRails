@@ -11,9 +11,42 @@
       <div class="col s12 l3 request-quote">
         <p>Give us a call at <a href="tel:6154186786">615-418-6786</a>, <a href="tel:6153376981">615-337-6981</a> to get a free quote or fill the form below.</p>
 
-        <p>Give us a call at <a href="tel:6154186786">615-418-6786</a>, <a href="tel:6153376981">615-337-6981</a> to get a free quote or fill the form below.</p>
+        <%= form_for @contact do |f| %>
+          <div class="row">
+          
+            <div class="input-field col s12 m12 l12">
+              <%= f.label :name, class: "cH" %>
+              <%= f.text_field :name, required: true, :placeholder => "Your Name" %>
+            </div>
 
-        <p>Give us a call at <a href="tel:6154186786">615-418-6786</a>, <a href="tel:6153376981">615-337-6981</a> to get a free quote or fill the form below.</p>
+
+            <div class="input-field col s12 m12 l12">
+              <%= f.label :email, class: "cH" %>
+              <%= f.email_field :email, required: true, :placeholder => "Your Email" %>
+            </div>
+
+            <div class="input-field col s12 m12 l12">
+              <%= f.label :phone, class: "cH" %>
+              <%= f.email_field :phone, required: true, :placeholder => "Your Phone Number" %>
+            </div>
+
+            <div class="input-field col s12 m12 l12">
+              <%= f.label :message, class: "cH" %>
+              <%= f.text_area :message, as: :text, class: "materialize-textarea", :placeholder => "Your Message"%>
+            </div>
+
+
+            <div class="input-field col s12 m12 l12 hide">
+              <%= f.label :nickname %>
+              <%= f.text_field :nickname, hint: 'leave this field blank' %>
+            </div>
+
+            <div class="input-field col s12 m12 l12">
+              <button class="btn waves-effect waves-light azul-color" type="submit" name="action">Get Your Quote</button>
+            </div>
+
+          </div>
+        <%end%>
       </div>
 
       <!-- Services -->

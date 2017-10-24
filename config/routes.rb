@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :clients
   resources :cities
   resources :homes
-  resources :contacts, only: [:new, :create]
+  resources :contacts
   get 'welcome/index'
   root 'welcome#index'
 

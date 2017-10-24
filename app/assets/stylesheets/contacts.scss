@@ -1,4 +1,23 @@
 // @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import "modules/all";
+
+input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, 
+input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, 
+input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, 
+input[type=date]:focus:not([readonly]) + label, input[type=datetime]:focus:not([readonly]) + label, 
+input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, 
+input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, 
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $azul;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 1px solid $azul !important;
+    box-shadow: 0 1px 0 0 $azul !important;
+}
+.azul-color{
+    background: $azul !important;
+}
 
 
 // $blue: #00adef;
