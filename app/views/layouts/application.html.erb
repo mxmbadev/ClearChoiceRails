@@ -27,7 +27,7 @@
         <%= link_to image_tag("CC_new_logo_Wblue.png", :alt => "Clear Choice"), root_path, :class => "brand-logo" %>
         <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons dehaze" style="color: #000;">dehaze</i></a>
         <ul class="right hide-on-med-and-down nav-links">
-          <li><a href="#home">Home</a></li>
+          <li><%= link_to "Home", root_path %></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <% if user_signed_in? %>
@@ -37,11 +37,12 @@
           <%end%>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="#home">Home</a></li>
+          <li><%= link_to "Home", root_path %></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <% if user_signed_in? %>
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+            <!-- WIP for dropdown-->
           <%else%>
             <li><%= link_to "Sign In", new_user_session_path%></li>
           <%end%>
@@ -50,21 +51,6 @@
     </div>
   </nav>
 </div>
-<!--
-<nav class="cc_nav">
-  <div class="container">
-    <div class="nav-wrapper">
-      <%= link_to image_tag("CC_new_logo_Wblue.png", :alt => "Clear Choice"), root_path, :class => "brand-logo" %>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->    
-<!--
 
 <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -82,7 +68,7 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li><%= link_to "Home", root_path, class: "page-scroll" %></li>
+                <li></li>
 
                 <li><%= link_to "Contact", new_contact_path, class: "page-scroll" %></li>
 
@@ -130,10 +116,8 @@
 <%= yield %>
 
 <footer class="footer">
-  <div class="container footer-container">
-    <div class="col-md-3">
-      <p>© 2016 <a href="http://espinozabrand.com">Brandon Espinoza</a></p>
-    </div>
+  <div class="container">
+    <p class="center">© 2017 - Clear Choice - Website Design and Developed by <a href="http://espinozabrand.com">EspinozaBrand.com</a></p>
   </div>
 </footer>
 

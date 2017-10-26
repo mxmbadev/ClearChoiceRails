@@ -11,7 +11,7 @@ nav.cc_nav{
 }
 
 .home-footer{
-  background: $oscuro;
+  background: rgb(48, 48, 48);
   p{
    color: #fff;
    a{
@@ -23,5 +23,14 @@ nav.cc_nav{
        transition: .3s ease-in-out all;
      }
    }
+  }
+}
+
+.footer{
+  background: #000;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  p{
+    color: rgb(185, 185, 185);
   }
 }
