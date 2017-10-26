@@ -1,0 +1,27 @@
+@import "modules/all";
+
+nav.cc_nav{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 75px;
+  .nav-wrapper{
+    a.brand-logo img{
+      max-width: 250px;
+    }
+  }
+}
+
+.home-footer{
+  background: $oscuro;
+  p{
+   color: #fff;
+   a{
+     text-decoration: underline;
+     font-weight: bold;
+     color: #fff;
+     &:hover{
+       color: $azul;
+       transition: .3s ease-in-out all;
+     }
+   }
+  }
+}
