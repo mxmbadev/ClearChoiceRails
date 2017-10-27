@@ -1,11 +1,21 @@
 @import "modules/all";
 
 nav.cc_nav{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 75px;
   .nav-wrapper{
     a.brand-logo img{
       max-width: 250px;
+    }
+    ul.right li{
+      a{
+        height: 75px;
+        &:hover{
+          background: $azul;
+          transition: .3s ease-in-out;
+          color: #fff;
+        }
+      }
     }
   }
 }
