@@ -1,47 +1,66 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import "modules/all";
 
-
-$blue: #00adef;
-$dark: #4E4E4E;
-$orange: #ff9600;
-
-
-.cH{
-  color: white;
+input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, 
+input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, 
+input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, 
+input[type=date]:focus:not([readonly]) + label, input[type=datetime]:focus:not([readonly]) + label, 
+input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, 
+input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, 
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $azul;
 }
 
-.con-form{
-  padding: 40px 0 60px 0;
+input:focus, textarea:focus{
+    border-bottom: 1px solid $azul !important;
+    box-shadow: 0 1px 0 0 $azul !important;
+}
+.azul-color{
+    background: $azul !important;
 }
 
-.col-form-head{
-  padding-top: 160px;
-}
 
-.form-control{
-  border-radius: 0px;
-  border: none;
-  box-shadow: 0 3px 10px #fff;
-  background: none;
-  color: #fff;
-}
+// $blue: #00adef;
+// $dark: #4E4E4E;
+// $orange: #ff9600;
 
-.form-control:focus{
-  box-shadow: 0 3px 10px $blue;
-}
 
-.intro-form {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+// .cH{
+//   color: white;
+// }
 
-.sendbtn{
-  background: $blue;
-  color: white;
-  border-radius: 0px;
-  border: none;
-}
+// .con-form{
+//   padding: 40px 0 60px 0;
+// }
 
-.sendbtn:hover{
-  color: white;
-}
+// .col-form-head{
+//   padding-top: 160px;
+// }
+
+// .form-control{
+//   border-radius: 0px;
+//   border: none;
+//   box-shadow: 0 3px 10px #fff;
+//   background: none;
+//   color: #fff;
+// }
+
+// .form-control:focus{
+//   box-shadow: 0 3px 10px $blue;
+// }
+
+// .intro-form {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+// }
+
+// .sendbtn{
+//   background: $blue;
+//   color: white;
+//   border-radius: 0px;
+//   border: none;
+// }
+
+// .sendbtn:hover{
+//   color: white;
+// }

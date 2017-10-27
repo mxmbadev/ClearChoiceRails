@@ -1,0 +1,46 @@
+@import "modules/all";
+
+nav.cc_nav{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 75px;
+  .nav-wrapper{
+    a.brand-logo img{
+      max-width: 250px;
+    }
+    ul.right li{
+      a{
+        height: 75px;
+        &:hover{
+          background: $azul;
+          transition: .3s ease-in-out;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.home-footer{
+  background: rgb(48, 48, 48);
+  p{
+   color: #fff;
+   a{
+     text-decoration: underline;
+     font-weight: bold;
+     color: #fff;
+     &:hover{
+       color: $azul;
+       transition: .3s ease-in-out all;
+     }
+   }
+  }
+}
+
+.footer{
+  background: #000;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  p{
+    color: rgb(185, 185, 185);
+  }
+}

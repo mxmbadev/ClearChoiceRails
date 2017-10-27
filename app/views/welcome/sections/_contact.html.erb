@@ -1,0 +1,49 @@
+<div id="contact" class="container sections">
+  <div class="row">
+    <div class="col s12 title-dark">
+      <div class="col s2 hr-line">
+        <hr>
+      </div>
+      <br>
+      <h1>Get In Touch</h1>
+    </div>
+    <div class="col s12 l12">
+      <%= form_for @contact do |f| %>
+        <div class="row">
+        
+          <div class="input-field col s12 m4 l4">
+            <%= f.label :name, class: "cH" %>
+            <%= f.text_field :name, required: true, :placeholder => "Your Name" %>
+          </div>
+
+
+          <div class="input-field col s12 m4 l4">
+            <%= f.label :email, class: "cH" %>
+            <%= f.email_field :email, required: true, :placeholder => "Your Email" %>
+          </div>
+
+          <div class="input-field col s12 m4 l4">
+            <%= f.label :phone, class: "cH" %>
+            <%= f.email_field :phone, required: true, :placeholder => "Your Phone Number" %>
+          </div>
+
+          <div class="input-field col s12 m12 l12">
+            <%= f.label :message, class: "cH" %>
+            <%= f.text_area :message, as: :text, class: "materialize-textarea", :placeholder => "Your Message"%>
+          </div>
+
+
+          <div class="input-field col s12 m12 l12 hide">
+            <%= f.label :nickname %>
+            <%= f.text_field :nickname, hint: 'leave this field blank' %>
+          </div>
+
+          <div class="input-field col s12 m12 l12">
+            <button class="btn waves-effect waves-light azul-color" type="submit" name="action">Get In Touch With Us</button>
+          </div>
+
+        </div>
+      <%end%>
+    </div>
+  </div>
+</div>

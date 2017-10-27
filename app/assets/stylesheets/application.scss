@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "modules/all";
+
+ body{
+   font-family: Arial, Helvetica, sans-serif;
+   color:#000;
+   overflow-x: hidden;
+ }
+ 
+ h1, h2, h3, h4, h5, h6, p, ul, li{
+   color: #535353;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ p{
+   letter-spacing: 2px;
+ }
+
+ .center-column{
+  float: none !important;
+  margin: 0 auto !important;
+}
+ 
+ #notice-wrapper{
+   position: absolute;
+   top: 0px;
+   width: 100%;
+   z-index: 1050;
+   background: #000;
+   p{
+     padding: 2.5rem 0;
+     text-align: center;
+     margin: 0;
+     font-size: 1.25rem;
+     font-weight: bold;
+     color: #fff;
+     letter-spacing: 2px;
+   }
+ }
+ 
+ 
+ .notice, .alert{
+   background: #000;
+   text-align: center;
+   color: #fff;
+   padding: 1em 0;
+   font-size: 18px;
+ }
+
+ .sections{
+   padding-top: 6%;
+   padding-bottom: 6%;
+   .title-dark{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    .hr-line{
+      padding: 0px;
+      hr{
+        border: none;
+        height: 5px;
+        background: $azul;
+      }
+    }
+    h1{
+      color: $oscuro;
+      letter-spacing: 2px;
+      font-weight: bold
+    }
+  }
+
+  .title-white{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    .hr-line{
+      padding: 0px;
+      hr{
+        border: none;
+        height: 5px;
+        background: #fff;
+      }
+    }
+    h1{
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+  }
+ }
+
+ .title-white{
+  padding-top: 6%;
+  padding-bottom: 6%;
+  .hr-line{
+    padding: 0px;
+    hr{
+      border: none;
+      height: 5px;
+      background: #fff;
+    }
+  }
+  h1{
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+}
+
+ .no-padding{
+   padding: 0px !important;
+ }
+
+ 

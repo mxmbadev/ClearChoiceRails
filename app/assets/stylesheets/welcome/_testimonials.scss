@@ -1,0 +1,51 @@
+@import "modules/all";
+
+#testimonials{
+  background-image: url('/assets/office_cleaning.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  // margin-top: -65px;
+  // height: 100vh; 
+  .all-testimonials{
+    padding-top: 6%;
+    padding-bottom: 8%;
+    .testimonial-card{
+      background: #fff;
+      border-radius: 3px;
+      padding: 2%;
+      height: 230px;
+      margin-bottom: 15px;
+      // border-right: 5px solid rgba(0, 0, 0, 0);
+      p{
+        text-align: center;
+        span.quotations{
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 993px){
+//   .testimonial-card.l4{
+//     width: 30% !important;
+//     height: 235px !important;
+//     margin: 5px;
+//     padding: 2%;
+//   }
+// }
+
+// @media only screen and (min-width: 601px){
+//   .testimonial-card.l4{
+//     width: 47% !important;
+//     height: 225px !important;
+//     margin: 5px;
+//     padding: 2%;
+//   }
+// }
