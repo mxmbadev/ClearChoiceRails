@@ -23,8 +23,8 @@ gem 'jbuilder', '~> 2.0'
 # Add Materialize Framework for Styling of the App
 gem 'materialize-sass'
 
-# FontAwesome.io
-gem "font-awesome-rails"
+# # FontAwesome.io
+# gem "font-awesome-rails"
 
 #Markdown
 gem 'redcarpet', '~> 3.2.2'
@@ -34,9 +34,9 @@ gem 'pygments.rb', '~> 0.6.0'
 
 gem 'friendly_id', '~> 5.1'
 
-gem 'will_paginate', '~> 3.1'
+# gem 'will_paginate', '~> 3.1'
 
-gem 'bootstrap-will_paginate'
+# gem 'bootstrap-will_paginate'
 
 #contact controller
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
@@ -44,11 +44,11 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # Authentication
 gem 'devise'
 
-# Animate.css
-gem 'animate.css-rails', '~> 3.2'
+# # Animate.css
+# gem 'animate.css-rails', '~> 3.2'
 
-# WOW.js
-gem 'wow-rails', '~> 0.0.1'
+# # WOW.js
+# gem 'wow-rails', '~> 0.0.1'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
