@@ -1,0 +1,22 @@
+@import "modules/all";
+#about{
+  .about-bg{
+    background-image: url('/assets/about_us_cleaning.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 650px;
+  }
+  .about-description{
+    background: $azul;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    height: 650px;
+    h1, p{
+      color: #fff;
+    }
+  }
+}

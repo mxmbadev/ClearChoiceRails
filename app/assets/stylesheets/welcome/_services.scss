@@ -1,0 +1,52 @@
+@import "modules/all";
+
+#services{
+  .request-quote{
+    p{
+      font-weight: bold;
+      color: $oscuro;
+      font-size: 20px;
+      a{
+        color: $azul;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .service{
+    .service-title{
+      .hr-line{
+        padding: 0px;
+        hr{
+          border: none;
+          height: 3px;
+          background: $azul;
+        }
+      }
+      h4{
+        letter-spacing: 2px;
+        color: $oscuro;
+        font-weight: bold;
+      }
+    }
+
+    .ind_service{
+      padding-top: 10%;
+      .icon_div{
+        padding: 0px;
+      }
+      .service_description{
+        h5{
+          font-weight: bold;
+        }
+        p{
+          letter-spacing: 2px;
+        }
+      }
+    }
+    #office_cleaning, #pressure_washing{
+      padding-top: 12%;
+    }
+  }
+}
