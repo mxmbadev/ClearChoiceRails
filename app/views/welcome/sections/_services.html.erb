@@ -16,23 +16,23 @@
           
             <div class="input-field col s12 m12 l12">
               <%= f.label :name, class: "cH" %>
-              <%= f.text_field :name, required: true, :placeholder => "Your Name" %>
+              <%= f.text_field :name, required: true %>
             </div>
 
 
             <div class="input-field col s12 m12 l12">
               <%= f.label :email, class: "cH" %>
-              <%= f.email_field :email, required: true, :placeholder => "Your Email" %>
+              <%= f.email_field :email, required: true%>
             </div>
 
             <div class="input-field col s12 m12 l12">
               <%= f.label :phone, class: "cH" %>
-              <%= f.email_field :phone, required: true, :placeholder => "Your Phone Number" %>
+              <%= f.telephone_field :phone, required: true%>
             </div>
 
             <div class="input-field col s12 m12 l12">
               <%= f.label :message, class: "cH" %>
-              <%= f.text_area :message, as: :text, class: "materialize-textarea", :placeholder => "Your Message"%>
+              <%= f.text_area :message, as: :text, class: "materialize-textarea"%>
             </div>
 
 
@@ -42,7 +42,7 @@
             </div>
 
             <div class="input-field col s12 m12 l12">
-              <button class="btn waves-effect waves-light azul-color" type="submit" name="action">Get Your Quote</button>
+              <button class="btn waves-effect waves-light azul-color" type="submit" name="action" style="white-space: no-wrap; width: 100%;">Get Your Quote</button>
             </div>
 
           </div>

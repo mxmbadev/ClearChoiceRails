@@ -13,23 +13,23 @@
         
           <div class="input-field col s12 m4 l4">
             <%= f.label :name, class: "cH" %>
-            <%= f.text_field :name, required: true, :placeholder => "Your Name" %>
+            <%= f.text_field :name, required: true %>
           </div>
 
 
           <div class="input-field col s12 m4 l4">
             <%= f.label :email, class: "cH" %>
-            <%= f.email_field :email, required: true, :placeholder => "Your Email" %>
+            <%= f.email_field :email, required: true%>
           </div>
 
           <div class="input-field col s12 m4 l4">
             <%= f.label :phone, class: "cH" %>
-            <%= f.email_field :phone, required: true, :placeholder => "Your Phone Number" %>
+            <%= f.telephone_field :phone, required: true%>
           </div>
 
           <div class="input-field col s12 m12 l12">
             <%= f.label :message, class: "cH" %>
-            <%= f.text_area :message, as: :text, class: "materialize-textarea", :placeholder => "Your Message"%>
+            <%= f.text_area :message, as: :text, class: "materialize-textarea"%>
           </div>
 
 
