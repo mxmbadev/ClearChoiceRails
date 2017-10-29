@@ -39,25 +39,16 @@
    top: 0px;
    width: 100%;
    z-index: 1050;
-   background: #000;
+   background: $azul;
    p{
-     padding: 2.5rem 0;
+     padding: 1rem 0;
      text-align: center;
      margin: 0;
-     font-size: 1.25rem;
+     font-size: 1rem;
      font-weight: bold;
      color: #fff;
      letter-spacing: 2px;
    }
- }
- 
- 
- .notice, .alert{
-   background: #000;
-   text-align: center;
-   color: #fff;
-   padding: 1em 0;
-   font-size: 18px;
  }
 
  .sections{
