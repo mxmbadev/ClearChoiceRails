@@ -1,19 +1,29 @@
-<div class="container">
+<div class="container sections">
   <div class="row">
-    <div class="col s12 l12">
-      <h1 class="left">All Clients</h1>
-      <p class="left">Total Clients =
+    <div class="col s12 title-dark">
+      <div class="col s2 hr-line">
+        <hr>
+      </div>
+      <br>
+      <h1>All Clients</h1>
+
+      <h5 class="left">Total Clients =
         <%= Client.count%>
-      </p>
+      </h5>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col s12 l12">
       <% @clients.each do |client| %>
-        <div class="col-md-4 border" >
-          <h1 class="center clients"><a href=""><%= link_to client.business, client %></a></h1>
+        <div class="clients col s12 m6 l4">
+          <div class="card">
+            <div class="card-content white-text">
+              <span class="card-title"><%= link_to client.business, client %></span>
+              <p><%= client.city.name %></p>
+            </div>
+          </div>
         </div>
       <%end%>
     </div>

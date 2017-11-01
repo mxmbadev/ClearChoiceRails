@@ -41,7 +41,7 @@
    z-index: 1050;
    background: $azul;
    p{
-     padding: 1rem 0;
+     padding: 1.7rem 0;
      text-align: center;
      margin: 0;
      font-size: 1rem;
@@ -62,6 +62,7 @@
       hr{
         border: none;
         height: 5px;
+        border-radius: 3px;
         background: $azul;
       }
     }
@@ -80,6 +81,7 @@
       hr{
         border: none;
         height: 5px;
+        border-radius: 4px;
         background: #fff;
       }
     }
@@ -99,6 +101,7 @@
     hr{
       border: none;
       height: 5px;
+      border-radius: 4px;
       background: #fff;
     }
   }

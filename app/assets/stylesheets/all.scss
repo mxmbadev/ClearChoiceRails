@@ -2,5 +2,12 @@ $azul:#007df2;
 $oscuro: #535353;
 $negro: #000;
 $naranja: #ff9600;
+
 @import "materialize/components/color";
 @import "materialize";
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
