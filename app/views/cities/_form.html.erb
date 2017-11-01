@@ -12,12 +12,18 @@
             </ul>
           <%end%>
 
-          <div class="form-group ">
-            <%= f.label :name %>
-            <%= f.text_field :name, {class: 'form-control city-client'} %>
+          <% if current_page?(:controller => "cities", :action => "edit")%>
+          <div class="input-field col s12">
+            <%= f.text_field :name %>
           </div>
-
-          <button type="submit" class="btn sendbtn">Submit</button>
+          <button type="submit" class="btn blue sendbtn">Update</button>
+          <% elsif current_page?(:controller => "cities", :action => "new") %>
+          <div class="input-field col s12">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
+          <button type="submit" class="btn blue sendbtn">Submit</button>
+          <% end %>
         <%end%>
       </div>
     </div>
