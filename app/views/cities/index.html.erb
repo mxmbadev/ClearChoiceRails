@@ -1,16 +1,30 @@
-<div class="container">
+<div class="container sections">
   <div class="row">
-    <div class="form col-md-12">
-      <h1 class="center">All Cities</h1>
-      <p class="center">Total Cities =
+    <div class="col s12 title-dark">
+      <div class="col s2 hr-line">
+        <hr>
+      </div>
+      <br>
+      <h1>All Cities</h1>
+
+      <h5 class="left">Total Clients =
         <%= City.count%>
-      </p>
+      </h5>
     </div>
   </div>
 </div>
-
-<% @cities.each do |city| %>
-  <div class="col-md-4 border" >
-    <h1 class="center clients"><a href=""><%= link_to city.name, city %></a></h1>
+<div class="container">
+  <div class="row">
+    <div class="col s12 l12">
+      <% @cities.each do |city| %>
+        <div class="city col s12 m6 l4">
+          <div class="card">
+            <div class="card-content white-text">
+              <span class="card-title"><%= link_to city.name, city %></span>
+            </div>
+          </div>
+        </div>
+      <%end%>
+    </div>
   </div>
-<%end%>
+</div>
