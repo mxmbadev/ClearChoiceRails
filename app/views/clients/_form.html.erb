@@ -37,10 +37,16 @@
             <%= f.text_field :email, {class: 'form-control city-client'} %>
           </div>
 
+
+          <% if current_page?( :controller => "clients", :action => "new")%>
           <div class="col s12">
             <button type="submit" class="btn sendbtn">Create</button>
           </div>
-
+          <% elsif current_page?(:controller => "clients", :action => "edit")%>
+          <div class="col s12">
+            <button type="submit" class="btn sendbtn">Update</button>
+          </div>
+          <%end%>
         <%end%>
       </div>
     </div>
