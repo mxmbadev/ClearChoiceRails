@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :clients
+  resources :clients do
+    resources :logs
+  end
   resources :cities
   resources :homes
   resources :contacts

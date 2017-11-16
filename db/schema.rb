@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160526033128) do
+ActiveRecord::Schema.define(version: 20171116052542) do
 
   create_table "cities", force: :cascade do |t|
     t.string   "name"
@@ -40,6 +40,18 @@ ActiveRecord::Schema.define(version: 20160526033128) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
+
+  create_table "logs", force: :cascade do |t|
+    t.datetime "date"
+    t.string   "service"
+    t.string   "payment_status"
+    t.decimal  "amount"
+    t.integer  "client_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "logs", ["client_id"], name: "index_logs_on_client_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
