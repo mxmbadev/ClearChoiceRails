@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171116052542) do
+ActiveRecord::Schema.define(version: 20171117192821) do
 
   create_table "cities", force: :cascade do |t|
     t.string   "name"
@@ -42,13 +42,13 @@ ActiveRecord::Schema.define(version: 20171116052542) do
   end
 
   create_table "logs", force: :cascade do |t|
-    t.datetime "date"
     t.string   "service"
     t.string   "payment_status"
     t.decimal  "amount"
     t.integer  "client_id"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "date_of_service"
   end
 
   add_index "logs", ["client_id"], name: "index_logs_on_client_id"

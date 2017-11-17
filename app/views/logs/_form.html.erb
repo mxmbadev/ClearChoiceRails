@@ -1,18 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col s12 l12">
-      <%= form_for([@client,@client.logs.build]) do |f| %>
-        <% if @log.errors.any?%>
-          <h2><%= pluralize(@log.errors.count, "error") %> prevented this log from saving:</h2>
-          <ul>
-            <% @log.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
-            <%end%>
-          </ul>
-        <%end%>
+      <%= form_for([@client, @client.logs.build]) do |f| %>
+
 
         <div class="input-field col s12">
-          <%= f.datetime_field :date, class: "datepicker", placeholder: "Date" %>
+          <%= f.text_field :date_of_service, class: "datepicker", placeholder: "Date" %>
         </div>
 
         <div class="input-field col s12">
@@ -29,11 +22,8 @@
           <%= f.label :amount %>
           <%= f.number_field :amount, value: number_to_currency(f.object.amount.to_f, delimiter: '', unit: ''), step: :any %>
         </div>
-        <% if current_page?(:controller => "logs", :action => "new")%>
         <button type="submit" class="btn blue sendbtn">Create</button>
-        <% elsif current_page?(:controller => "logs", :action => "edit") %>
-        <button type="submit" class="btn blue sendbtn">Update</button>
-        <% end %>
+
       <%end%>
     </div>
 
@@ -45,7 +35,7 @@
         clear: 'Clear',
         close: 'Ok',
         closeOnSelect: false, // Close upon selecting a date,
-        format: 'dd-mm-yyyy'
+        format: 'mm-dd-yyyy'
       });
     </script>
   </div>

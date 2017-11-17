@@ -16,19 +16,21 @@
         </thead>
 
         <tbody>
+          <% @logs.each do |log| %>
           <tr>
             <td><%= @client.business%></td>
-            <td><%= log.date%></td>
-            <td><%= log.service%></td>
+            <td><%= log.date_of_service %></td>
+            <td><%= log.service %></td>
             <td><%= log.payment_status %></td>
             <td><%= log.amount %></td>
-            <td><%= link_to "Edit", edit_log_path(log), class: "btn orange" %></td>
-            <td><%= link_to "Delete", log_path(log), method: :delete, data: {confirm: "Estas seguro que quieres borrar este log?"}, class: "btn red" %></td>
+            <td><%= link_to "Edit", edit_client_log_path(log.client, log), class: "btn orange" %></td>
+            <td><%= link_to "Delete", [log.client, log], method: :delete, data: {confirm: "Are you sure you want to DELETE this LOG?"}, class: "btn red" %></td>
           </tr>
+          <%end%>
         </tbody>
       </table>
       <br>
-      <%= link_to "Add a new Log", new_log_path, class: "btn blue"%>
+      <%= link_to "Add a new Log", new_client_log_path(@client, @log), class: "btn blue"%>
     </div>
   </div>
 </div>

@@ -20,7 +20,7 @@ class ClientsController < ApplicationController
   end
 
   def show
-
+    @logs = Log.where(client_id: @client).order("created_at")
   end
 
   def edit
