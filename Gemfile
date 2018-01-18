@@ -30,7 +30,7 @@ gem 'materialize-sass'
 gem 'redcarpet', '~> 3.2.2'
 
 # Syntax Highlighting
-gem 'pygments.rb', '~> 0.6.0'
+# gem 'pygments.rb', '~> 0.6.0'
 
 gem 'friendly_id', '~> 5.1'
 
