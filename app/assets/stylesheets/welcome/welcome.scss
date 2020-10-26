@@ -13,7 +13,7 @@ header.home-bg{
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top: -65px;
+  margin-top: -75px;
   height: 100vh;
   // text-align: center;
   color: white;
@@ -36,6 +36,16 @@ header.home-bg{
         height: 5px;
         background: $azul;
       }
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  header.home-bg{
+    margin-top: -110px;
+    height: auto;
+    .bg-text{
+      padding-top: 25%;
+      padding-bottom: 25%;
     }
   }
 }

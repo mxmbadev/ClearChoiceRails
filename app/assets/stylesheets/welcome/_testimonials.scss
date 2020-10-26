@@ -32,6 +32,12 @@
   }
 }
 
+@media screen and (max-width: 980px){
+  #testimonials h1{
+    overflow-wrap: break-word;
+  }
+}
+
 // @media only screen and (min-width: 993px){
 //   .testimonial-card.l4{
 //     width: 30% !important;

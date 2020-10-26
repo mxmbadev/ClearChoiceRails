@@ -20,6 +20,20 @@ nav.cc_nav{
     .dropdown-content li > a{
       color: $azul;
     }
+    ul.mobile-menu{
+      padding-top: 60px;
+      width: 100%;
+    }
+    @media screen and (min-width: 980px){
+      ul.mobile-menu{
+        display: none;
+      }  
+    }
+  }
+}
+@media screen and (max-width: 980px){
+  nav.cc_nav{
+    height: 110px;
   }
 }
 
