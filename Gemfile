@@ -27,7 +27,7 @@ gem 'materialize-sass'
 # gem "font-awesome-rails"
 
 #Markdown
-gem 'redcarpet', '~> 3.2.2'
+gem 'redcarpet', '~> 3.5.1'
 
 # Syntax Highlighting
 # gem 'pygments.rb', '~> 0.6.0'
