@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -27,12 +27,12 @@ gem 'materialize-sass'
 # gem "font-awesome-rails"
 
 #Markdown
-gem 'redcarpet', '~> 3.2.2'
+gem 'redcarpet'
 
 # Syntax Highlighting
 # gem 'pygments.rb', '~> 0.6.0'
 
-gem 'friendly_id', '~> 5.1'
+gem 'friendly_id'
 
 # gem 'will_paginate', '~> 3.1'
 
