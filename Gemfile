@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.1.3'
+ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
@@ -27,7 +27,7 @@ gem 'materialize-sass'
 # gem "font-awesome-rails"
 
 #Markdown
-gem 'redcarpet'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
 # Syntax Highlighting
 # gem 'pygments.rb', '~> 0.6.0'
@@ -52,8 +52,6 @@ gem 'devise'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-
 
 
 
