@@ -53,7 +53,7 @@ gem 'devise'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-
+gem 'sqlite3', '1.3.13'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -78,9 +78,9 @@ group :development, :test do
   gem 'spring'
 end
 
-group :development do
-  gem 'sqlite3', '1.3.13'
-end
+# group :development do
+#   gem 'sqlite3', '1.3.13'
+# end
 
 group :production do
   gem 'pg'
