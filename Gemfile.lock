@@ -197,6 +197,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.6.5)
+      mini_portile2 (~> 2.8.0)
     thor (1.2.2)
     tilt (2.2.0)
     timeout (0.4.0)
@@ -238,6 +240,7 @@ DEPENDENCIES
   sass-rails
   sdoc (~> 0.4.0)
   spring
+  sqlite3
   turbolinks
   uglifier
   web-console (~> 2.0)
